@@ -16,7 +16,6 @@
 
 .iconquestion {
     font-family: Calibri;
-
 }
 
 .profilebtn {
@@ -29,7 +28,6 @@
     background: none;
     border: none;
 }
-
 
 .sidenav {
     scrollbar-width: none;
@@ -50,7 +48,6 @@
 .sidenavicons {
     font-size: 18px;
     font-weight: lighter;
-
 }
 
 .sidenav-iconame {
@@ -62,18 +59,6 @@
     height: 24px;
 
 }
-
-@media (max-width:768px) {
-    .sidenav {
-        height: 50vh !important;
-
-    }
-
-    .sidenavicons {
-        font-size: 24px;
-    }
-}
-
 
 .sidenav div {
     width: 100% !important;
@@ -97,19 +82,15 @@
 
 .bdy-con {
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
-
     border-top-left-radius: 10px;
     height: 92%;
-
 }
 
 .notifycon {
     background: linear-gradient(to right, #fbe6e8, #cbddff);
     padding-left: 20%;
     border-top-left-radius: 10px;
-
     min-height: 8%;
-
 }
 
 .notificationFont {
@@ -132,7 +113,6 @@
 
     /* Hide scrollbar for Firefox */
     scrollbar-width: none;
-
     /* Hide scrollbar for IE and older Edge */
     -ms-overflow-style: none;
 }
@@ -160,16 +140,6 @@
     width: 30%;
 }
 
-@media (max-width:768px) {
-    .cardstyle img {
-        width: 70% !important;
-    }
-
-    .cardstyle h6 {
-        font-size: 70%;
-    }
-}
-
 .previouslyaddedcard {
     height: 70px;
     align-items: center;
@@ -190,7 +160,6 @@
     height: 40px !important;
 }
 
-
 .addAppscontainer h4 {
     font-size: 22px;
 }
@@ -206,4 +175,23 @@
 .btn-con button:hover {
     background-color: black;
     color: white;
+}
+
+@media (max-width:768px) {
+    .sidenav {
+        height: 50vh !important;
+
+    }
+
+    .sidenavicons {
+        font-size: 24px;
+    }
+
+    .cardstyle img {
+        width: 70% !important;
+    }
+
+    .cardstyle h6 {
+        font-size: 70%;
+    }
 }
