@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+
+</head>
+
+<body>
+    <div class="container-fluid  main text-center">
+        <div class="row h-100">
+            <div class="col-md-1 col-12  d-flex flex-column align-items-center   sidenav h-100">
+                <div class="py-3">
+                    <i class="sidenavicons bi bi-grid-3x3-gap-fill"></i>
+                </div>
+
+                <div>
+                    <i class=" sidenavicons bi bi-house-door"></i>
+                    <p class="sidenav-iconame">Home</p>
+                </div>
+                <div>
+                    <i class="sidenavicons bi bi-plus-circle"></i>
+                    <p class="sidenav-iconame">Create</p>
+                </div>
+                <div>
+                    <i class="sidenavicons bi bi-folder"></i>
+                    <p class="sidenav-iconame">My Content</p>
+                </div>
+                <div>
+                    <img class="sidenaviconimage sidenavicons" src="./resources/appicon.png" />
+                    <p class="sidenav-iconame">Apps</p>
+                </div>
+                <div>
+                    <img class="sidenaviconimage sidenavicons" src="./resources/adminicon.png" />
+                    <p class="sidenav-iconame">Admin</p>
+                </div>
+                <div>
+                    <img class="sidenaviconimage sidenavicons" src="./resources/outllok.png" />
+                    <p class="sidenav-iconame">Outlook</p>
+                </div>
+                <div>
+                    <img class="sidenaviconimage sidenavicons" src="./resources/teams.png" />
+                    <p class="sidenav-iconame">Teams</p>
+                </div>
+                <div>
+                    <img class="sidenaviconimage sidenavicons" src="./resources/word.png" />
+                    <p class="sidenav-iconame">Word</p>
+                </div>
+                <div>
+                    <img class="sidenaviconimage sidenavicons" src="./resources/excel.png" />
+                    <p class="sidenav-iconame">Excel</p>
+                </div>
+                <div>
+                    <img class="sidenaviconimage sidenavicons" src="./resources/powerpoint.png" />
+                    <p class="sidenav-iconame">Power Point</p>
+                </div>
+                <div>
+                    <img class="sidenaviconimage sidenavicons" src="./resources/onenote.png" />
+                    <p class="sidenav-iconame">OneNote</p>
+                </div>
+                <div>
+                    <i class="sidenavicons bi bi-three-dots"></i>
+                </div>
+            </div>
+            <div class="col-md-11 col-12 contentcontainer h-100">
+
+                <div class="row navbarcontainer">
+                    <nav class="navbar">
+                        <a class="navbar-brand text-danger">
+                            Microsoft
+                            365</a>
+                        <div
+                            class="w-50 bg-white d-flex align-items-center border border-1 border-dark-subtle rounded-3 ">
+                            <i class="bi bi-search px-3 text-danger"></i>
+                            <input class="py-2 me-2 searchinput w-100" type="search" placeholder="Search"
+                                aria-label="Search" />
+                        </div>
+                        <ul class="d-none d-md-flex align-items-center gap-4 list-unstyled mb-0">
+                            <li><i class="bi bi-calendar-check navicon"></i></li>
+                            <li><i class="bi bi-gear navicon"></i></li>
+                            <li><i class="bi bi-question-circle navicon"></i></li>
+                            <li class="border border-black border-2 rounded-circle p-2 bg-black bg-opacity-10  ">
+                                <button class="px-2 border-0 profilebtn ">S</button>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="row bdy-con">
+                    <div class=" py-3 d-flex align-items-center  notifycon ">
+                        <img src="./resources/microsoftoffice.png" class="sidenaviconimage px-1" />
+                        <i class="bi bi-arrow-right"></i>
+                        <img src="./resources/microsoft365.png" class="sidenaviconimage px-1" />
+                        <span class="notificationFont"> The Office app is becoming the new Microsoft 365 app. Your
+                            home
+                            to
+                            find, create
+                            and share
+                            your content and ideas. <span class="text-danger">Learn More</span></span>
+                        <i class="bi bi-x crossicon ms-auto"></i>
+                    </div>
+                    <div class="mainContentContainer">
+                        <div class="row  p-5 ">
+                            <div class="d-flex mt-1 addAppscontainer justify-content-between align-content-center">
+                                <h4>Apps</h4>
+                                <button class="btn btn-danger px-3"><i class="bi bi-plus-square px-1"></i> Add
+                                    apps</button>
+                            </div>
+                            <div class="row card-group gap-3 mt-5 flex-wrap">
+                                <div class="card col-4 col-lg-2 cardstyle text-center p-3 border-0 shadow-sm">
+                                    <img class="card-img-top mx-auto" src="./resources/teams.png" alt="Teams">
+                                    <h6 class=" mt-3">Teams</h6>
+                                </div>
+                                <div class="card col-4 col-lg-2 cardstyle text-center p-3 border-0 shadow-sm">
+                                    <img class="card-img-top mx-auto" src="./resources/word.png" alt="Word">
+                                    <h6 class="mt-3">Word</h6>
+                                </div>
+                                <div class="card col-4 col-lg-2 cardstyle text-center p-3 border-0 shadow-sm">
+                                    <img class="card-img-top mx-auto" src="./resources/excel.png" alt="Excel">
+                                    <h6 class="mt-3">Excel</h6>
+                                </div>
+                                <div class="card col-4 col-lg-2 cardstyle text-center p-3 border-0 shadow-sm">
+                                    <img class="card-img-top mx-auto" src="./resources/powerpoint.png" alt="PowerPoint">
+                                    <h6 class="mt-3">PowerPoint</h6>
+                                </div>
+                                <div class="card col-4 col-lg-2 cardstyle text-center p-3 border-0 shadow-sm">
+                                    <img class="card-img-top mx-auto" src="./resources/outllok.png" alt="Outlook">
+                                    <h6 class="mt-3">Outlook</h6>
+                                </div>
+                                <div class="card col-4 col-lg-2 cardstyle text-center p-3 border-0 shadow-sm">
+                                    <img class="card-img-top mx-auto" src="./resources/Onedrive.png" alt="OneDrive">
+                                    <h6 class="mt-3">OneDrive</h6>
+                                </div>
+                                <div class="card col-4 col-lg-2 cardstyle text-center p-3 border-0 shadow-sm">
+                                    <img class="card-img-top mx-auto" src="./resources/onenote.png" alt="OneNote">
+                                    <h6 class="mt-3">OneNote</h6>
+                                </div>
+                            </div>
+                            <div class="mt-3 text-end">
+                                <button class="bg-transparent border-0 text-danger">All apps <i
+                                        class="bi bi-arrow-right"></i></button>
+                            </div>
+
+                        </div>
+                        <div class="row mb-0  px-5">
+                            <h5 class="text-start">Previously added</h4>
+                                <div class="row d-flex flex-wrap">
+                                    <div
+                                        class="col-4 previouslyaddedcard d-flex  align-items-center g gap-3 justify-content-start">
+                                        <img src="./resources/Appstudio.png" class="h-75" />
+                                        <p>App Studio</p>
+                                    </div>
+                                    <div
+                                        class="col-4 previouslyaddedcard d-flex   align-items-center g gap-3 justify-content-start">
+                                        <img src="./resources/assignmenticon.png" class="h-75" />
+                                        <p>Assignments</p>
+                                    </div>
+                                    <div
+                                        class="col-4 previouslyaddedcard d-flex   align-items-center g gap-3 justify-content-start">
+                                        <img src="./resources/excelfull.png" class="h-75" />
+                                        <p>Excel</p>
+                                    </div>
+                                    <div
+                                        class="col-4 previouslyaddedcard d-flex   align-items-center g gap-3 justify-content-start">
+                                        <img src="./resources/powerbi.png" class="h-75" />
+                                        <p>Power Bi</p>
+                                    </div>
+                                    <div
+                                        class="col-4 previouslyaddedcard d-flex   align-items-center g gap-3 justify-content-start">
+                                        <img src="./resources/powerpointfull.png" class="h-75" />
+                                        <p>Power Point</p>
+                                    </div>
+                                    <div
+                                        class="col-4 previouslyaddedcard d-flex   align-items-center g gap-3 justify-content-start">
+                                        <img src="./resources/taskmodule.png" class="h-75" />
+                                        <p>Task Module Sample</p>
+                                    </div>
+                                    <div
+                                        class="col-4 previouslyaddedcard d-flex   align-items-center g gap-3 justify-content-start">
+                                        <img src="./resources/wordfull.png" class="h-75" />
+                                        <p>Word</p>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="row text-start flex-row">
+                            <div class="col-12 mt-5 mb-5 gap-4 btn-con px-5">
+                                <button class="btn border-secondary rounded-pill mx-1">Productivity</button>
+                                <button class="btn  border-secondary rounded-pill mx-1">Utilities</button>
+                                <button class="btn border-secondary rounded-pill mx-1">Eductaion</button>
+                                <button class="btn border-secondary rounded-pill mx-1">4 more+</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+            </div>
+
+        </div>
+</body>
+
+</html>
