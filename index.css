@@ -2,12 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 .main {
     height: 100vh !important;
     background-size: cover;
     background-color: #c7c4c4;
+    overflow: hidden;
 }
 
 .navicon {
@@ -34,9 +36,9 @@
 .sidenav {
     scrollbar-width: none;
     -ms-overflow-style: none;
-    width: 5% !important;
     padding: 0 !important;
     background-color: #f0f0f0;
+    overflow-y: scroll;
 }
 
 .navbarcontainer {
@@ -48,38 +50,47 @@
 }
 
 .sidenavicons {
-    font-size: 18px;
+    font-size: 100%;
     font-weight: lighter;
 
 }
 
 .sidenav-iconame {
-    font-size: 10px;
+    font-size: 50%;
     margin-bottom: 0;
+
 }
 
 .sidenaviconimage {
     height: 24px;
-
 }
 
 @media (max-width:768px) {
     .sidenav {
-        height: 50vh !important;
-
+        height: 100% !important;
     }
 
     .sidenavicons {
-        font-size: 24px;
+        width: 60%;
+        height: 40%;
+        font-size: 80%;
+
     }
 }
 
+@media (max-width:368px) {
+    .sidenavicons {
+        height: 50%;
+    }
+
+}
 
 .sidenav div {
     width: 100% !important;
     border-left: solid 4px transparent;
-    padding-bottom: 4px;
-    padding-top: 4px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+
 
 }
 
@@ -90,14 +101,11 @@
 }
 
 .contentcontainer {
-    width: 95% !important;
     background-color: #f0f0f0;
-
 }
 
 .bdy-con {
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
-
     border-top-left-radius: 10px;
     height: 92%;
 
@@ -105,9 +113,7 @@
 
 .notifycon {
     background: linear-gradient(to right, #fbe6e8, #cbddff);
-    padding-left: 20%;
     border-top-left-radius: 10px;
-
     min-height: 8%;
 
 }
@@ -152,21 +158,30 @@
 .cardstyle {
     align-items: center !important;
     justify-content: center !important;
-    height: 120px;
     border-radius: 12px !important;
 }
 
 .cardstyle img {
-    width: 30%;
+    width: 60%;
+}
+
+.cardstyle h6 {
+    font-size: 70%;
 }
 
 @media (max-width:768px) {
+    .cardstyle {
+        height: 140px;
+    }
+
     .cardstyle img {
         width: 70% !important;
+        height: 20%;
+
     }
 
     .cardstyle h6 {
-        font-size: 70%;
+        font-size: 60%;
     }
 }
 
@@ -190,7 +205,6 @@
     height: 40px !important;
 }
 
-
 .addAppscontainer h4 {
     font-size: 22px;
 }
@@ -206,4 +220,27 @@
 .btn-con button:hover {
     background-color: black;
     color: white;
+}
+
+@media(max-width:320px) {
+    .sidenav {
+        display: none !important;
+    }
+
+    .contentcontainer {
+        width: 100% !important;
+    }
+}
+
+.card-img {
+    height: 60%;
+    width: 60% !important;
+}
+
+@media (max-width:560px) {
+    .card-img {
+        height: 60% !important;
+        width: 50% !important;
+    }
+
 }
