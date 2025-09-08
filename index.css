@@ -39,6 +39,7 @@
     padding: 0 !important;
     background-color: #f0f0f0;
     overflow-y: scroll;
+    width: 8% !important;
 }
 
 .navbarcontainer {
@@ -50,13 +51,13 @@
 }
 
 .sidenavicons {
-    font-size: 100%;
+    font-size: 20px;
     font-weight: lighter;
 
 }
 
 .sidenav-iconame {
-    font-size: 50%;
+    font-size: 10px;
     margin-bottom: 0;
 
 }
@@ -73,7 +74,7 @@
     .sidenavicons {
         width: 60%;
         height: 40%;
-        font-size: 80%;
+        font-size: 18px;
 
     }
 }
@@ -102,6 +103,7 @@
 
 .contentcontainer {
     background-color: #f0f0f0;
+    width: 92%;
 }
 
 .bdy-con {
@@ -155,35 +157,15 @@
     height: 20%;
 }
 
-.cardstyle {
-    align-items: center !important;
-    justify-content: center !important;
-    border-radius: 12px !important;
-}
 
-.cardstyle img {
-    width: 60%;
-}
 
-.cardstyle h6 {
-    font-size: 70%;
-}
 
-@media (max-width:768px) {
-    .cardstyle {
-        height: 140px;
-    }
 
-    .cardstyle img {
-        width: 70% !important;
-        height: 20%;
 
-    }
 
-    .cardstyle h6 {
-        font-size: 60%;
-    }
-}
+
+
+
 
 .previouslyaddedcard {
     height: 70px;
@@ -232,15 +214,44 @@
     }
 }
 
-.card-img {
-    height: 60%;
-    width: 60% !important;
+.cardstyle img {
+    width: 50% !important;
 }
 
-@media (max-width:560px) {
-    .card-img {
-        height: 60% !important;
-        width: 50% !important;
+.cardstyle {
+    width: 12%;
+}
+
+.cardstyle h6 {
+    font-size: 1em !important;
+}
+
+.card-title {
+    font-size: 1.2em !important;
+}
+
+@media(max-width:992px) {
+    .cardstyle {
+        width: 20% !important;
     }
 
+    .cardstyle h6 {
+        font-size: 12px;
+    }
 }
+
+@media(max-width:576px) {
+    .cardstyle {
+        width: 40% !important;
+    }
+
+    .cardstyle h6 {
+        font-size: 10px !important;
+    }
+}
+
+/* @media(max-width:368px) {
+    .cardstyle h6 {
+        font-size: 10px;
+    }
+} */
