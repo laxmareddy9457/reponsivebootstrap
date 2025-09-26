@@ -20,7 +20,7 @@
 <body>
     <div class="container-fluid  main text-center">
         <div class="row h-100">
-            <div class="col-md-1 col-12  d-flex flex-column align-items-center   sidenav h-100">
+            <div class="d-flex flex-column align-items-center sidenav h-100">
                 <div class="py-3">
                     <i class="sidenavicons bi bi-grid-3x3-gap-fill"></i>
                 </div>
@@ -30,7 +30,7 @@
                 </div>
                 <div>
                     <i class="sidenavicons bi bi-plus-circle"></i>
-                    <p class="sidenav-iconame">Create</p>
+                    <p class="sidenav-iconame text-wrap">Create</p>
                 </div>
                 <div>
                     <i class="sidenavicons bi bi-folder"></i>
@@ -72,7 +72,7 @@
                     <i class="sidenavicons bi bi-three-dots"></i>
                 </div>
             </div>
-            <div class="col-md-11 col-12 contentcontainer h-100">
+            <div class="contentcontainer h-100">
 
                 <div class="row navbarcontainer">
                     <nav class="navbar">
@@ -96,7 +96,7 @@
                     </nav>
                 </div>
                 <div class="row bdy-con">
-                    <div class=" py-3 d-flex align-items-center  notifycon ">
+                    <div class="py-3 d-flex justify-content-around w-100 align-items-center  notifycon ">
                         <img src="./resources/microsoftoffice.png" class="sidenaviconimage px-1" />
                         <i class="bi bi-arrow-right"></i>
                         <img src="./resources/microsoft365.png" class="sidenaviconimage px-1" />
@@ -109,94 +109,100 @@
                         <i class="bi bi-x crossicon ms-auto"></i>
                     </div>
                     <div class="mainContentContainer">
-                        <div class="row  p-5 ">
-                            <div class="d-flex mt-1 addAppscontainer justify-content-between align-content-center">
+                        <div class="p-5 ">
+                            <div class="d-flex  mt-1 addAppscontainer justify-content-between align-content-center">
                                 <h4>Apps</h4>
-                                <button class="btn btn-danger px-3"><i class="bi bi-plus-square px-1"></i> Add
+                                <button class=" addappBtn btn-danger px-3"><i class="bi bi-plus-square px-1"></i> Add
                                     apps</button>
                             </div>
-                            <div class="row card-group gap-3 mt-5 flex-wrap">
-                                <div class="card col-4 col-lg-2 cardstyle text-center p-3 border-0 shadow-sm">
-                                    <img class="card-img-top mx-auto" src="./resources/teams.png" alt="Teams">
+                            <div class="row  gap-3 mt-5 flex-wrap w-100">
+                                <div class="card  col-4 col-lg-2 cardstyle text-center p-3 border-0 shadow-sm">
+                                    <img class="card-img card-img-top mx-auto" src="./resources/teams.png" alt="Teams">
                                     <h6 class=" mt-3">Teams</h6>
                                 </div>
-                                <div class="card col-4 col-lg-2 cardstyle text-center p-3 border-0 shadow-sm">
-                                    <img class="card-img-top mx-auto" src="./resources/word.png" alt="Word">
+                                <div class="card  col-4  col-lg-2 cardstyle text-center p-3 border-0 shadow-sm">
+                                    <img class="card-img card-img-top mx-auto" src="./resources/word.png" alt="Word">
                                     <h6 class="mt-3">Word</h6>
                                 </div>
-                                <div class="card col-4 col-lg-2 cardstyle text-center p-3 border-0 shadow-sm">
-                                    <img class="card-img-top mx-auto" src="./resources/excel.png" alt="Excel">
+                                <div class="card  col-4 col-lg-2 cardstyle text-center p-3 border-0 shadow-sm">
+                                    <img class="card-img card-img-top mx-auto" src="./resources/excel.png" alt="Excel">
                                     <h6 class="mt-3">Excel</h6>
                                 </div>
-                                <div class="card col-4 col-lg-2 cardstyle text-center p-3 border-0 shadow-sm">
-                                    <img class="card-img-top mx-auto" src="./resources/powerpoint.png" alt="PowerPoint">
+                                <div class="card  col-4 col-lg-2 cardstyle text-center p-3 border-0 shadow-sm">
+                                    <img class="card-img card-img-top mx-auto" src="./resources/powerpoint.png"
+                                        alt="PowerPoint">
                                     <h6 class="mt-3">PowerPoint</h6>
                                 </div>
-                                <div class="card col-4 col-lg-2 cardstyle text-center p-3 border-0 shadow-sm">
-                                    <img class="card-img-top mx-auto" src="./resources/outllok.png" alt="Outlook">
+                                <div class="card  col-4 col-lg-2 cardstyle text-center p-3 border-0 shadow-sm">
+                                    <img class="card-img card-img-top mx-auto" src="./resources/outllok.png"
+                                        alt="Outlook">
                                     <h6 class="mt-3">Outlook</h6>
                                 </div>
-                                <div class="card col-4 col-lg-2 cardstyle text-center p-3 border-0 shadow-sm">
-                                    <img class="card-img-top mx-auto" src="./resources/Onedrive.png" alt="OneDrive">
+                                <div class="card  col-4 col-lg-2 cardstyle text-center p-3 border-0 shadow-sm">
+                                    <img class="card-img card-img-top mx-auto" src="./resources/Onedrive.png"
+                                        alt="OneDrive">
                                     <h6 class="mt-3">OneDrive</h6>
                                 </div>
-                                <div class="card col-4 col-lg-2 cardstyle text-center p-3 border-0 shadow-sm">
-                                    <img class="card-img-top mx-auto" src="./resources/onenote.png" alt="OneNote">
+                                <div
+                                    class="card lastcrad  col-4 col-lg-2 cardstyle text-center p-3 border-0 shadow-sm ">
+                                    <img class="card-img card-img-top mx-auto" src="./resources/onenote.png"
+                                        alt="OneNote">
                                     <h6 class="mt-3">OneNote</h6>
                                 </div>
+
                             </div>
                             <div class="mt-3 text-end">
                                 <button class="bg-transparent border-0 text-danger">All apps <i
                                         class="bi bi-arrow-right"></i></button>
                             </div>
-
                         </div>
+
                         <div class="row mb-0  px-5">
                             <h5 class="text-start">Previously added</h4>
                                 <div class="row d-flex flex-wrap">
                                     <div
-                                        class="col-4 previouslyaddedcard d-flex  align-items-center g gap-3 justify-content-start">
+                                        class=" col-md-4 previouslyaddedcard d-flex  align-items-center g gap-3 justify-content-start">
                                         <img src="./resources/Appstudio.png" class="h-75" />
                                         <p>App Studio</p>
                                     </div>
                                     <div
-                                        class="col-4 previouslyaddedcard d-flex   align-items-center g gap-3 justify-content-start">
+                                        class=" col-md-4  previouslyaddedcard d-flex   align-items-center g gap-3 justify-content-start">
                                         <img src="./resources/assignmenticon.png" class="h-75" />
                                         <p>Assignments</p>
                                     </div>
                                     <div
-                                        class="col-4 previouslyaddedcard d-flex   align-items-center g gap-3 justify-content-start">
+                                        class=" col-md-4 previouslyaddedcard d-flex   align-items-center g gap-3 justify-content-start">
                                         <img src="./resources/excelfull.png" class="h-75" />
                                         <p>Excel</p>
                                     </div>
                                     <div
-                                        class="col-4 previouslyaddedcard d-flex   align-items-center g gap-3 justify-content-start">
+                                        class=" col-md-4 previouslyaddedcard d-flex   align-items-center g gap-3 justify-content-start">
                                         <img src="./resources/powerbi.png" class="h-75" />
                                         <p>Power Bi</p>
                                     </div>
                                     <div
-                                        class="col-4 previouslyaddedcard d-flex   align-items-center g gap-3 justify-content-start">
+                                        class=" col-md-4  previouslyaddedcard d-flex   align-items-center g gap-3 justify-content-start">
                                         <img src="./resources/powerpointfull.png" class="h-75" />
                                         <p>Power Point</p>
                                     </div>
                                     <div
-                                        class="col-4 previouslyaddedcard d-flex   align-items-center g gap-3 justify-content-start">
+                                        class=" col-md-4 previouslyaddedcard d-flex   align-items-center g gap-3 justify-content-start">
                                         <img src="./resources/taskmodule.png" class="h-75" />
                                         <p>Task Module Sample</p>
                                     </div>
                                     <div
-                                        class="col-4 previouslyaddedcard d-flex   align-items-center g gap-3 justify-content-start">
+                                        class=" col-md-4  previouslyaddedcard d-flex   align-items-center g gap-3 justify-content-start">
                                         <img src="./resources/wordfull.png" class="h-75" />
                                         <p>Word</p>
                                     </div>
                                 </div>
                         </div>
-                        <div class="row text-start flex-row">
-                            <div class="col-12 mt-5 mb-5 gap-4 btn-con px-5">
-                                <button class="btn border-secondary rounded-pill mx-1">Productivity</button>
-                                <button class="btn  border-secondary rounded-pill mx-1">Utilities</button>
-                                <button class="btn border-secondary rounded-pill mx-1">Eductaion</button>
-                                <button class="btn border-secondary rounded-pill mx-1">4 more+</button>
+                        <div class="row mb-5 text-start flex-row">
+                            <div class="col mt-5 mb-5 gap-4 btn-con px-5">
+                                <button class="btn border-secondary rounded-pill mx-1 mb-1">Productivity</button>
+                                <button class="btn  border-secondary rounded-pill mx-1 mb-1">Utilities</button>
+                                <button class="btn border-secondary rounded-pill mx-1 mb-1">Eductaion</button>
+                                <button class="btn border-secondary rounded-pill mx-1 mb-1">4 more+</button>
                             </div>
                         </div>
                     </div>
