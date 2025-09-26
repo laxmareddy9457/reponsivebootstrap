@@ -38,8 +38,9 @@
     -ms-overflow-style: none;
     padding: 0 !important;
     background-color: #f0f0f0;
+    flex-shrink: 0;
     overflow-y: scroll;
-    width: 8% !important;
+    width: 60px !important;
 }
 
 .navbarcontainer {
@@ -72,7 +73,7 @@
     }
 
     .sidenavicons {
-        width: 60%;
+        width: 35% !important;
         height: 40%;
         font-size: 18px;
 
@@ -103,7 +104,7 @@
 
 .contentcontainer {
     background-color: #f0f0f0;
-    width: 92%;
+    flex: 1;
 }
 
 .bdy-con {
